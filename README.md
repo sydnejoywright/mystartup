@@ -18,7 +18,7 @@ My startup will allow people who have never been exposed to the Book of Mormon t
 ###HTML
 
 HTML structural and organizational elements will be used to create a seamless
-and intuitive experience for users. Using html elements like: <header>, <section>, and <article> 
+and intuitive experience for users. Using html elements like header, section, and article 
 to organize content like quotes, questions, journal entries, etc. 
 Navigation elements like forward and backward buttons, with allow user control. We can also use
 buttons for sharing or saving quotes.
