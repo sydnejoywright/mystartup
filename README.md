@@ -56,6 +56,7 @@ different elements entail, but it looks like websockets can be used to enable re
 I guess this could be used to show users that their commands have been retrieved/processed. 
 
 ![Simple Home Page](Home_page1.png)
+![Second Page](_page2.png)
 
 
 
