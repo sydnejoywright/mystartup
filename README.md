@@ -55,7 +55,8 @@ I could use a websocket to give basic live updates to the user. At this point I'
 different elements entail, but it looks like websockets can be used to enable real time communication and updates.
 I guess this could be used to show users that their commands have been retrieved/processed. 
 
-![image](/users/guest/i/imsydne/cs260/mystartup/Home_page1.png)
+![Simple Home Page](Home_page1.png)
+
 
 
 
