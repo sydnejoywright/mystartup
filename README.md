@@ -65,15 +65,15 @@ I guess this could be used to show users that their commands have been retrieved
 #HTML pages for each component of the application
 
 -index.html
-  -uploaded images
+    -uploaded images
 
-  -input text and key links
+    -input text and key links
 
-  -web socket placeholder (DO NOT KNOW HOW TO USE THIS)
+    -web socket placeholder (DO NOT KNOW HOW TO USE THIS)
 
-  -account creation placeholder
+    -account creation placeholder
 
-  -username display place holder
+    -username display place holder
 
 -contact.html (contact form basic structure)
 
@@ -81,17 +81,17 @@ I guess this could be used to show users that their commands have been retrieved
 
 -suffering.html
 
-  -mymistakes.html
+    -mymistakes.html
 
-    -images
+        -images
 
-    -nav links
+        -nav links
 
-  -suffering_almasstory.html
+    -suffering_almasstory.html
 
-    -images
-    
-    -nav links
+        -images
+
+        -nav links
   
 
 
