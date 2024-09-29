@@ -92,6 +92,8 @@ I guess this could be used to show users that their commands have been retrieved
         -images
 
         -nav links
+
+This criterion is linked to a Learning OutcomeDatabase data placeholder showing content stored in the database (not sure how to do this)
   
 
 
