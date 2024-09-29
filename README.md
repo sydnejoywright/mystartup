@@ -61,21 +61,36 @@ I guess this could be used to show users that their commands have been retrieved
 #HTML UPDATES
 
 ##Successful Completions (at a basic level):
+
 #HTML pages for each component of the application
+
 -index.html
   -uploaded images
+
   -input text and key links
+
   -web socket placeholder (DO NOT KNOW HOW TO USE THIS)
+
   -account creation placeholder
+
   -username display place holder
+
 -contact.html (contact form basic structure)
+
 -book_request.html (order form basic structure)
+
 -suffering.html
+
   -mymistakes.html
+
     -images
+
     -nav links
+
   -suffering_almasstory.html
+
     -images
+    
     -nav links
   
 
