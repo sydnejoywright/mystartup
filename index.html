@@ -54,6 +54,37 @@
         <button type="submit">Login</button>
         <button type="submit">Create</button>
       </form>
+
+      <h1>WebSocket Placeholder Example</h1>
+      <div id="messages"></div>
+      <input type="text" id="messageInput" placeholder="Type a message...">
+      <button id="sendMessage">Send</button>
+  
+      <script>
+          // Replace with your WebSocket server URL
+          const socket = new WebSocket('ws://your-websocket-server-url');
+  
+          // Connection opened
+          socket.addEventListener('open', function (event) {
+              console.log('Connected to WebSocket server');
+          });
+  
+          // Listen for messages
+          socket.addEventListener('message', function (event) {
+              const messagesDiv = document.getElementById('messages');
+              const newMessage = document.createElement('div');
+              newMessage.textContent = 'Message from server: ' + event.data;
+              messagesDiv.appendChild(newMessage);
+          });
+  
+          // Send message on button click
+          document.getElementById('sendMessage').addEventListener('click', function () {
+              const messageInput = document.getElementById('messageInput');
+              const message = messageInput.value;
+              socket.send(message);
+              messageInput.value = ''; // Clear the input after sending
+          });
+      </script>
     </main>
 
     <footer>
