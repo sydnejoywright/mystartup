@@ -58,7 +58,7 @@ I guess this could be used to show users that their commands have been retrieved
 ![Simple Home Page](Home_page1.png) ![Second Page](_page2.png)
 
 
-#HTML UPDATES
+#HTML Deliverable
 
 ##Successful Completions (at a basic level):
 
