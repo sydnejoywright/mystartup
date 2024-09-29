@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Free Book</title>
+</head>
+<body>
+    <h1>Request Your Free Copy of the Book</h1>
+    <form action="/submit-request" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="address">Billing Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+
+        <label for="phone">Phone Number (optional):</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="book-title">Book Title:</label>
+        <input type="text" id="book-title" name="book-title" required>
+
+        <label for="comments">Additional Comments (optional):</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+
+        <button type="submit">Submit Request</button>
+    </form>
+</body>
+</html>
