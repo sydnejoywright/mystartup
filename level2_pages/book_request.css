@@ -1,0 +1,73 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1b7ea2;
+    margin: 0;
+}
+
+/* Form Container */
+form {
+    background-color: white;
+    padding: 20px; /* Compact padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Reduced width for compactness */
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    margin-right: 70px;
+    margin-bottom: 15px; /* Reduced margin for heading */
+    font-size: 1.4rem; /* Slightly smaller heading */
+    color: white;
+}
+
+/* Form Elements */
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea {
+    margin-top: 5px;
+    padding: 8px; /* Reduced padding for compact look */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Submit Button */
+button {
+    margin-top: 15px; /* Reduced space before the button */
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

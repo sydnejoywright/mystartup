@@ -6,6 +6,7 @@
     <title>Request a Free Book</title>
 </head>
 <body>
+    <link rel="stylesheet" href="book_request.css">
     <h1>Request your free copy of The Book of Mormon</h1>
     <form action="/submit-request" method="POST">
         <label for="name">Full Name:</label>
@@ -19,9 +20,6 @@
 
         <label for="phone">Phone Number (optional):</label>
         <input type="tel" id="phone" name="phone">
-
-        <label for="book-title">Book Title:</label>
-        <input type="text" id="book-title" name="book-title" required>
 
         <label for="comments">Additional Comments (optional):</label>
         <textarea id="comments" name="comments" rows="4"></textarea>
