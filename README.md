@@ -98,6 +98,15 @@ This criterion is linked to a Learning OutcomeDatabase data placeholder showing 
 
 
 
-
+#CSS DELIVERABLE
+#SUCCESSFUL COMPLETIONS:
+    - Properly styled header, footer, and main content body: see index.html and index.css
+    - Properly Styled Navigation elements: see nav bar in header as well as reactive styled buttons that launch the learner into their first lesson.
+    -Properly styled CSS application elements: see 
+        -create_account.css
+        -index.css
+        -book_request.css
+        -create_account.css
+        -about.css
 
 
