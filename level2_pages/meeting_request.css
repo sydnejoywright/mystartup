@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1b7ea2;
+    margin: 0;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    color: white;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, select, textarea {
+    margin-top: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+header{
+    background-color: #1b7ea2;
+    display: flex;
+    padding: none;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  header div{
+    margin-right: 15px;
+  }
+
+  header a{
+    text-decoration: none;
+    font-family: 'Times New Roman';
+    color: white;
+    display: inline-block;
+    margin-right: 80px;
+    font-size: 20px;
+  }
+
+  .username{
+    display: inline;
+    text-align: right;
+    color: white;
+    font-size: 20px;
+
+  }

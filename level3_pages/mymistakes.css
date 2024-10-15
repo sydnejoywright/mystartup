@@ -1,0 +1,71 @@
+html{
+    height: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+main{
+    height: 100vh;
+    background-image: url("personal_suffering.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+
+header{
+    background-color: #1b7ea2;
+    display: flex;
+    padding: none;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  header div{
+    margin-right: 15px;
+  }
+
+  header a{
+    text-decoration: none;
+    font-family: 'Times New Roman';
+    color: white;
+    display: inline-block;
+    margin-right: 80px;
+    font-size: 20px;
+  }
+
+  .username{
+    display: inline;
+    text-align: right;
+    color: white;
+    font-size: 20px;
+
+  }
+
+  footer{
+    position: fixed;
+    bottom: 0; /* Pin to the bottom */
+    left: 0; /* You can also pin to the left side */
+    width: 100%;
+    background-color: #1b7ea2;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.create_account a{
+    text-decoration: none;
+    font-size: 20px;
+}
+ main nav p{
+    padding-top: 20px;
+    font-size: 20px;
+ }

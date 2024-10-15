@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get in Touch</title>
+    <link rel="stylesheet" href="/level2_pages/meeting_request.css">
 </head>
+
 <body>
     <h1>Get in Touch</h1>
     <form action="/submit-contact" method="POST">
-        <label for="name">Full Name:</label>
+        <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
 
         <label for="phone">Phone Number:</label>
@@ -27,13 +29,10 @@
             <!-- Add more countries as needed -->
         </select>
 
-        <label for="city">City/State:</label>
-        <input type="text" id="city" name="city" required>
-
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="4" required></textarea>
 
-        <button type="submit">Send Message</button>
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>
