@@ -102,11 +102,16 @@ This criterion is linked to a Learning OutcomeDatabase data placeholder showing 
 #SUCCESSFUL COMPLETIONS:
     - Properly styled header, footer, and main content body: see index.html and index.css
     - Properly Styled Navigation elements: see nav bar in header as well as reactive styled buttons that launch the learner into their first lesson.
-    -Properly styled CSS application elements: see 
+    - Properly styled CSS application elements: see 
         -create_account.css
         -index.css
         -book_request.css
         -create_account.css
         -about.css
+        -mymistakes.css
+        -meeting_request.css
+    - Responsive to window resizing: Still working on a few glitches here, but the content will mostly adjust for screen size.
+    - Properly styled CSS application text content: You can find examples of my text content on any of the pages. 
+    - I want to add more images, but there are a few right now. 
 
 
