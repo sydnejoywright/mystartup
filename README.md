@@ -113,5 +113,6 @@ This criterion is linked to a Learning OutcomeDatabase data placeholder showing 
     - Responsive to window resizing: Still working on a few glitches here, but the content will mostly adjust for screen size.
     - Properly styled CSS application text content: You can find examples of my text content on any of the pages. 
     - I want to add more images, but there are a few right now. 
+    - Really struggling with formatting different elements together on the page.
 
 
