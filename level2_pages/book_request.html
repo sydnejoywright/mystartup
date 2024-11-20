@@ -8,26 +8,24 @@
 </head>
 
 <body>
-    <div>
-    <div>
-        <header>
-        <nav>
-          <menu>
-            <a href="/index.html">Home</a>
-            <a href="/level2_pages/meeting_request.html">Contact a Missionary</a>
-            <a href="/level2_pages/about.html">About</a>
-          </menu>
-        </nav>    
-      </header>
-    </div>
+  <header>
+    <nav>
+      <menu>
+        <a href="/index.html">Home</a>
+        <a href="/level2_pages/meeting_request.html">Contact a Missionary</a>
+        <a href="/level2_pages/about.html">About</a>
+        <a href="/create_account.html">Create Profile</a>
+      </menu>
+    </nav>    
+  </header>
 
-    <div class="tit">
+  <main>
         <h1>Request your free copy of The Book of Mormon</h1>
-    </div>
+  </main>
 
 <div class="gettomiddlebro">
     <form action="/submit-request" method="POST">
-        <label for="name">Full Name:</label>
+        <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
 
         <label for="email">Email Address:</label>
@@ -36,14 +34,19 @@
         <label for="address">Billing Address:</label>
         <textarea id="address" name="address" rows="4" required></textarea>
 
-        <label for="phone">Phone Number (optional):</label>
+        <label for="phone">Phone Number:</label>
         <input type="tel" id="phone" name="phone">
-
-        <label for="comments">Additional Comments (optional):</label>
-        <textarea id="comments" name="comments" rows="4"></textarea>
 
         <button type="submit">Submit Request</button>
     </form>
 </div>
+
+
+  <footer>
+    <span class="text-reset">Sydne Wright</span>
+    <br />
+    <a href="https://github.com/sydnejoywright/mystartup.git">GitHub</a>
+  </footer>
+  
 </body>
 </html>

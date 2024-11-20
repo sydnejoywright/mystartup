@@ -40,12 +40,12 @@ main p{
 }
 
 .intro{
-    text-align: left;
+    text-align: center;
 }
 
 .header1{
     font-size: 20px;
-    text-align: left;
+    text-align: center;
 }
 
 .header2{
@@ -63,22 +63,13 @@ main h3{
     font-size: 20px;
 }
 
-footer{
-    position: fixed;
-    bottom: 0; /* Pin to the bottom */
-    left: 0; /* You can also pin to the left side */
-    width: 100%;
-    background-color: #1b7ea2;
-    color: white;
-    font-family: sans-serif;
-    text-align: center;
-}
+
 
 
 .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #7e80eb; /* Green background */
+    background-color: #1b7ea2; /* Green background */
     color: white; /* White text */
     text-align: center;
     text-decoration: none; /* Remove underline */
@@ -89,10 +80,21 @@ footer{
   }
   
   .button:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #ae9611; /* Darker green on hover */
   }
   
   .create_account a{
     text-decoration: none;
     font-size: 20px;
+}
+
+footer{
+  position: fixed;
+  bottom: 0; /* Pin to the bottom */
+  left: 0; /* You can also pin to the left side */
+  width: 100%;
+  background-color: #1b7ea2;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
 }
