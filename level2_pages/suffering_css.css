@@ -40,16 +40,16 @@ main p{
 }
 
 .intro{
-    text-align: center;
+    text-align: left;
 }
 
 .header1{
     font-size: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .header2{
-    text-align: center;
+    text-align: left;
     font-size: 30px;
     padding-bottom: 0px;
     color: #1b7ea2;
@@ -59,7 +59,7 @@ main h3{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-align: center;
+    text-align: left;
     font-size: 20px;
 }
 
