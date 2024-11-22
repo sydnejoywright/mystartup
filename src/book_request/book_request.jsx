@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function About() {
+export function Book_Request() {
   return (
     <main className='container-fluid bg-secondary text-center'>
       <div>login displayed here</div>
