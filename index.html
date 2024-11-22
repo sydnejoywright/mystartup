@@ -1,82 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css">
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+
+    <title>Startup React</title>
   </head>
-
-
   <body>
-
-
-    <header>
-        <nav>
-          <a href="level2_pages/book_request.html">Free Book!</a>
-          <a href="level2_pages/meeting_request.html">Contact a Missionary</a>
-          <a href="level2_pages/about.html">About</a>
-          <a href="create_account.html">Create Profile</a>
-        </nav>
-    </header>
-
-
-
-    <main>
-      <div class='text-container'>
-        <h1>Welcome to a short lesson in The Book of Mormon</h1>
-        <nav>
-            <a href="level2_pages/suffering.html" class ="button">Why would a loving God allow so much suffering?</a>
-            <!--<li><a href="/level2_pages/better.html">How can I be a better person?</a></li>
-            <li><a href="/level2_pages/death.html">What happens after I die?</a></li>
-            <li><a href="/level2_pages/god.html">Does God exist? Who is God?</a></li>
-        -->
-
-            <p class="create_account">If you want to pick up where you left off, or save your progress for next time, please</p>
-            <a href="create_account.html">Create an Account</a>
-        </nav>
-      </div>
-
-
-
-      <div class ='websocket-stuff'>
-      <h3>WebSocket Placeholder Example</h3>
-      <div id="messages"></div>
-      <input type="text" id="messageInput" placeholder="Type a message...">
-      <button id="sendMessage">Send</button>
-  
-      <script>
-          // Replace with your WebSocket server URL
-          const socket = new WebSocket('ws://your-websocket-server-url');
-  
-          // Connection opened
-          socket.addEventListener('open', function (event) {
-              console.log('Connected to WebSocket server');
-          });
-  
-          // Listen for messages
-          socket.addEventListener('message', function (event) {
-              const messagesDiv = document.getElementById('messages');
-              const newMessage = document.createElement('div');
-              newMessage.textContent = 'Message from server: ' + event.data;
-              messagesDiv.appendChild(newMessage);
-          });
-  
-          // Send message on button click
-          document.getElementById('sendMessage').addEventListener('click', function () {
-              const messageInput = document.getElementById('messageInput');
-              const message = messageInput.value;
-              socket.send(message);
-              messageInput.value = ''; // Clear the input after sending
-          });
-      </script>
-      </div>
-
-    </main>
-
-    <footer>
-      <span class="text-reset">Sydne Wright</span>
-      <br />
-      <a href="https://github.com/sydnejoywright/mystartup.git">GitHub</a>
-    </footer>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/index.jsx"></script>
   </body>
-</html>
+</html>s
