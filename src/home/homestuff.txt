@@ -1,0 +1,56 @@
+
+  const [messages, setMessages] = useState([]);
+  const [messageInput, setMessageInput] = useState('');
+  let socket;
+
+  useEffect(() => {
+    // Replace with your WebSocket server URL
+    socket = new WebSocket('ws://your-websocket-server-url');
+
+    // Connection opened
+    socket.addEventListener('open', () => {
+      console.log('Connected to WebSocket server');
+    });
+
+    // Listen for messages
+    socket.addEventListener('message', (event) => {
+      setMessages((prevMessages) => [...prevMessages, event.data]);
+    });
+
+    // Clean up WebSocket connection on component unmount
+    return () => {
+      socket.close();
+    };
+  }, []);
+
+  const sendMessage = () => {
+    if (socket && messageInput.trim() !== '') {
+      socket.send(messageInput);
+      setMessageInput(''); // Clear the input after sending
+    }
+  };
+
+
+
+
+  8888888888888888888888888888888888888888888888888888888888888888888888888888888888
+
+
+      <div className="websocket-stuff">
+        <h3>WebSocket Placeholder Example</h3>
+        <div id="messages">
+          {messages.map((message, index) => (
+            <div key={index}>Message from server: {message}</div>
+          ))}
+        </div>
+        <input
+          type="text"
+          value={messageInput}
+          onChange={(e) => setMessageInput(e.target.value)}
+          placeholder="Type a message..."
+        />
+        <button onClick={sendMessage}>Send</button>
+      </div>
+
+
+ 888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888     

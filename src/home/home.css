@@ -1,0 +1,71 @@
+main{
+    height: 100vh;
+    background-image: url('https://scripturecentral.org/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fscripturecentral-prod-strapi-uploads%2FKW_743_6f0e85b658%2FKW_743_6f0e85b658.jpg&w=3840&q=75');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgb(9, 9, 9);
+    text-align: center;
+}
+
+main h1{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+}
+
+main nav-link{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.text-container {
+  display: inline-block; /* Shrinks the container to fit the text */
+  text-align: center; /* Centers the text inside the container */
+  margin: 0 auto; /* Centers the container horizontally */
+  padding: 20px; /* Optional padding to give some space around the text */
+  position: absolute; /* Allows the container to float and be placed relative to the viewport */
+  top: 50%; /* Positions the container in the middle of the screen vertically */
+  left: 50%; /* Positions the container in the middle of the screen horizontally */
+  transform: translate(-50%, -50%);
+  background-color: #f5f8f995; /* Offsets the container so it is exactly centered */
+}
+
+
+
+.create_account a{
+    text-decoration: none;
+    font-size: 20px;
+}
+ main nav p{
+    padding-top: 20px;
+    font-size: 20px;
+ }
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1b7ea2; /* Green background */
+  color: white; /* White text */
+  text-align: center;
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 25px; /* Font size */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+  
+}
+
+.button:hover {
+  background-color: #967f0a; /* Darker green on hover */
+}
+
+
+.websocket-stuff{
+    position: fixed;
+    bottom: 6%; /* Pin to the bottom */
+    left: 0; /* You can also pin to the left side */
+    width: 100%; /* Make it span the full width of the screen */ /* Background color */
+    color: white; /* Text color */
+    padding: 10px; /* Space around the text */
+    text-align: right; /* Center the text */
+}
