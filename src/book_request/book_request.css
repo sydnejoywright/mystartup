@@ -35,10 +35,7 @@ header a {
 }
 
 body{
-    background-image: url('bom.webp');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+
 
     height: 100vh; /* Full viewport height */
     display: flex;
@@ -47,6 +44,14 @@ body{
     flex-direction: column;
 
 }
+
+/* body .bg-image{
+    background-image: url('bom.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+} */
 
 
 

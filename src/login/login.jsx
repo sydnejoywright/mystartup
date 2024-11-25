@@ -1,24 +1,42 @@
-import React from 'react';
-import './create_account.css'
+import React, { useState } from 'react';
+import './create_account.css';
 
 export function Login() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleSubmit = (event, action) => {
+    event.preventDefault();
+    // Handle login or account creation logic here
+    console.log(action, { email, password });
+  };
+
   return (
     <main>
-      <div className="tit">
+      <div className="title">
         <h1>Sign In or Create an Account :)</h1>
       </div>
 
-      <form method="get" action="play.html">
+      <form onSubmit={(e) => handleSubmit(e, 'Create Account')}>
         <div>
           <span>@</span>
-          <input type="text" placeholder="your@email.com" />
+          <input 
+            type="text" 
+            value={email} 
+            onChange={(e) => setEmail(e.target.value)} 
+            placeholder="your@email.com" 
+          />
         </div>
         <div>
           <span>🔒</span>
-          <input type="password" placeholder="password" />
+          <input 
+            type="password" 
+            value={password} 
+            onChange={(e) => setPassword(e.target.value)} 
+            placeholder="password" 
+          />
         </div>
-        <button type="submit">Login</button>
-        <button type="submit">Create</button>
+        <button type="submit">Create Account</button>
       </form>
     </main>
   );

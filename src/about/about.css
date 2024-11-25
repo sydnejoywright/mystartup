@@ -41,18 +41,16 @@ html, body{
 }
 
 
-p{
-    display: flex;
-    color: black;
-    font-size: 25px;
-    margin-left: 350px;
-    margin-right: 350px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 60px;
-    padding: 10px;
-    background-color: rgba(253, 251, 251, 0.671);
-    
+p {
+  display: flex;
+  color: black;
+  font-size: 25px;
+  padding: 10px;
+  background-color: rgba(253, 251, 251, 0.6); /* More opaque background */
+  width: 80%; /* Takes up 80% of the screen width */
+  margin: 60px auto; /* Centers the p element horizontally with margin-top of 60px */
+  align-items: center;
+  justify-content: center;
 }
 
 footer{

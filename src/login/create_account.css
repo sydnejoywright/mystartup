@@ -50,15 +50,15 @@ header a {
     font-size: 20px;
 }
 
-
+/* 
 body{
     background-image: url('bom.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
+} */
 
-.tit{
+.title{
     color: white;
     align-items: center;
     font-size: 15px;

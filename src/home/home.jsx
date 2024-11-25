@@ -9,18 +9,21 @@ import { NavLink } from 'react-router-dom';
 export function Home() {
   return (
     <main>
+    <body>
       <div className="text-container">
-        <h1>Welcome to a short lesson in The Book of Mormon</h1>
-        <nav>
-          <NavLink to="/level2_pages/suffering" className="button">
-            Why would a loving God allow so much suffering?
-          </NavLink>
-        </nav>
+          <h1>Welcome to a short lesson in The Book of Mormon</h1>
+          <nav>
+            <NavLink to="/level2_pages/suffering" className="button">
+              Why would a loving God allow so much suffering?
+            </NavLink>
+          </nav>
+        </div>
+      
         <p className="create_account">
-          If you want to pick up where you left off, or save your progress for next time, please{' '}
-          <NavLink to="/create_account">Create an Account</NavLink>
+            If you want to pick up where you left off, or save your progress for next time, please * {'    '}
+                    <NavLink to="/create_account">Create an Account</NavLink>
         </p>
-      </div>
+      </body>
     </main>
   );
 }

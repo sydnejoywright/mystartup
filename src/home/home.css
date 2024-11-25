@@ -1,12 +1,15 @@
-main{
-    height: 100vh;
-    background-image: url('https://scripturecentral.org/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fscripturecentral-prod-strapi-uploads%2FKW_743_6f0e85b658%2FKW_743_6f0e85b658.jpg&w=3840&q=75');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: rgb(9, 9, 9);
-    text-align: center;
+
+
+body {
+  background-image: url('https://scripturecentral.org/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fscripturecentral-prod-strapi-uploads%2FKW_743_6f0e85b658%2FKW_743_6f0e85b658.jpg&w=3840&q=75');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+  margin: 0; /* Remove default margin */
+  font-family: Arial, sans-serif; /* Set a default font */
+  color: #fff; /* Set a text color to contrast with the background */
 }
+
 
 main h1{
   padding-top: 10px;
@@ -32,11 +35,17 @@ main nav-link{
 }
 
 
+.create_account{
+  position: fixed;
+  bottom: 10%;
+
+}
 
 .create_account a{
     text-decoration: none;
     font-size: 20px;
 }
+
  main nav p{
     padding-top: 20px;
     font-size: 20px;
