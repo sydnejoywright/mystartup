@@ -116,3 +116,17 @@ This criterion is linked to a Learning OutcomeDatabase data placeholder showing 
     - Really struggling with formatting different elements together on the page.
 
 
+
+#STARTUP REACT DELIVERABLE
+#SUCCESSFULL COMPLETIONS:
+    -SIMON DONE
+    -SET UP MY BROWSWER ROUTER AND NAV LINKS
+    -CREATED JSX COMPONENTS FOR THE FOLLOWING:
+        -ABOUT
+        -BOOK_REQUEST
+        -HOME
+        -LOGIN
+        -MEETING_REQUEST
+    -STRUGGLING A LOT WITH MY BACKGROUND IMAGES AND SOME OF THE STYLING. ALSO STRUGGLING TO LINKS ON INTERAL PAGES TO ROUTE CORRECTLY. WORKED WITH TA'S ON BOTH AND WASN'T ABLE TO FIND THE ANSWER YET.
+    
+

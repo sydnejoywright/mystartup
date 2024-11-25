@@ -1,66 +1,27 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  header {
-    background-color: hsl(196, 71%, 37%);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 15px 0;
-    display: flex;
-    flex-direction: row;
-    z-index: 1000;
-    justify-content: center; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-header a {
-    text-decoration: none;
-    color: white;
-    display: inline-block;
-    margin-right: 80px;
-    font-family: 'Times New Roman';
-    font-size: 20px;
-}
-
-
-html, body{
-    padding-top: 40px;
-    background-color: white;
-    height: 100%;
-    /* background-image: url("https://www.churchofjesuschrist.org/imgs/76fcb58a762dad20f42c33336f976d38b7cae8aa/full/1920%2C/0/default") */
-
-  }
-  
-.wrapper{
-    min-height: 100vh;
-}
-
-
-p {
+.about-page {
+  /* background-image: url('https://scripturecentral.org/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fscripturecentral-prod-strapi-uploads%2FKW_743_6f0e85b658%2FKW_743_6f0e85b658.jpg&w=3840&q=75');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+  min-height: 100vh; /* Full viewport height */
   display: flex;
-  color: black;
-  font-size: 25px;
-  padding: 10px;
-  background-color: rgba(253, 251, 251, 0.6); /* More opaque background */
-  width: 80%; /* Takes up 80% of the screen width */
-  margin: 60px auto; /* Centers the p element horizontally with margin-top of 60px */
   align-items: center;
   justify-content: center;
 }
 
-footer{
-    position: fixed;
-    bottom: 0; /* Pin to the bottom */
-    left: 0; /* You can also pin to the left side */
-    width: 100%;
-    background-color: #1b7ea2;
-    color: white;
-    font-family: sans-serif;
-    text-align: center;
-    font-size: 20px;
-  }
+.content-wrapper {
+  color: white;
+  font-size: 28px;
+  padding: 10px;
+  background-color: rgba(92, 98, 100, 0.7); /* Semi-transparent background */
+  width: 80%; /* Takes up 80% of the screen width */
+  margin: 60px auto; /* Centers the wrapper horizontally with margin-top of 60px */
+  text-align: center;
+  border-radius: 8px;
+}

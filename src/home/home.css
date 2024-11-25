@@ -31,24 +31,27 @@ main nav-link{
   top: 50%; /* Positions the container in the middle of the screen vertically */
   left: 50%; /* Positions the container in the middle of the screen horizontally */
   transform: translate(-50%, -50%);
-  background-color: #f5f8f995; /* Offsets the container so it is exactly centered */
+  background-color: #5c6264b4; /* Offsets the container so it is exactly centered */
 }
 
 
 .create_account{
-  position: fixed;
+  margin-top: 900px;
   bottom: 10%;
+  font-size: 30px;
 
 }
 
-.create_account a{
+.create{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
+    color: gold;
 }
+
 
  main nav p{
     padding-top: 20px;
-    font-size: 20px;
+    font-size: 25px;
  }
 
 .button {
@@ -59,13 +62,13 @@ main nav-link{
   text-align: center;
   text-decoration: none; /* Remove underline */
   border-radius: 5px; /* Rounded corners */
-  font-size: 25px; /* Font size */
+  font-size: 30px; /* Font size */
   transition: background-color 0.3s ease; /* Smooth hover effect */
   
 }
 
 .button:hover {
-  background-color: #967f0a; /* Darker green on hover */
+  background-color: rgb(221, 189, 5); /* Darker green on hover */
 }
 
 
