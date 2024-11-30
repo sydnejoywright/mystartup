@@ -1,25 +1,7 @@
-html{
-    height: 100%;
-}
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  html {
-    height: 100%;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-main {
+.mymistakes-main {
     height: 100vh;
+    width: 100vw;
     background-image: url("personal_suffering.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -33,98 +15,11 @@ main {
     padding: 20px; /* Add padding for better spacing */
 }
 
-/* Style the text content */
-main p {
-    font-size: 1.5rem; /* Large, readable font size */
-    line-height: 1.8; /* Add line spacing for readability */
-    max-width: 800px; /* Limit width to make text easier to read */
-    background-color: rgba(0, 0, 0, 0.6); /* Add a semi-transparent background */
-    padding: 20px; /* Space around text */
-    border-radius: 10px; /* Smooth corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for emphasis */
-}
 
-/* Style the h3 title */
 main h3 {
     margin-top: 20px;
     font-size: 2rem; /* Larger font for titles */
     color: white; /* Highlight with a contrasting color */
 }
 
-/* Adjust spacing for links */
-main nav p {
-    padding-top: 20px;
-    font-size: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-}
 
-main nav a {
-    font-size: 1.2rem;
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    background-color: #1b7ea2;
-    border-radius: 5px;
-    margin-top: 10px;
-    display: inline-block;
-    transition: background-color 0.3s;
-}
-
-main nav a:hover {
-    background-color: #ff9900; /* Slightly darker on hover */
-}
-
-
-
-header{
-    background-color: #1b7ea2;
-    display: flex;
-    padding: none;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    padding: 10px;
-  }
-  
-  header div{
-    margin-right: 15px;
-  }
-
-  header a{
-    text-decoration: none;
-    font-family: 'Times New Roman';
-    color: white;
-    display: inline-block;
-    margin-right: 80px;
-    font-size: 20px;
-  }
-
-  .username{
-    display: inline;
-    text-align: right;
-    color: white;
-    font-size: 20px;
-
-  }
-
-
-  footer{
-    position: fixed;
-    bottom: 0; /* Pin to the bottom */
-    left: 0; /* You can also pin to the left side */
-    width: 100%;
-    background-color: #1b7ea2;
-    color: white;
-    font-family: sans-serif;
-    text-align: center;
-}
-
-.create_account a{
-    text-decoration: none;
-    font-size: 20px;
-}
- main nav p{
-    padding-top: 20px;
-    font-size: 20px;
- }

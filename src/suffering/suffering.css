@@ -1,23 +1,13 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
+.suffering-main{
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
 
-html, body{
-  padding-top: 40px;
-  background-color: white;
-  height: 100%;
-
-
-}
-
-main{
-    margin-left: 10px;
-    min-height: calc(100vh - 80px);
-    padding-bottom: 80px;
-    overflow: auto;
 }
 main p{
     font-family: 'Times New Roman';
@@ -71,15 +61,4 @@ main h3{
   .create_account a{
     text-decoration: none;
     font-size: 20px;
-}
-
-footer{
-  position: fixed;
-  bottom: 0; /* Pin to the bottom */
-  left: 0; /* You can also pin to the left side */
-  width: 100%;
-  background-color: #1b7ea2;
-  color: white;
-  font-family: sans-serif;
-  text-align: center;
 }

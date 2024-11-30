@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 // import { Alma_Continued } from './alma_continued/suffering_alma_continued';
 // import { Suffering_Almas_Story } from './almas_story/suffering_almas_story';
 // import { My_Mistakes } from './my_mistakes/mymistakes';
-// import { Suffering } from './suffering/suffering';
+import { Suffering } from '../suffering/suffering';
 
 export function Home() {
   return (
@@ -12,7 +12,7 @@ export function Home() {
       <div className="text-container">
           <h1>Welcome to a short lesson in The Book of Mormon</h1>
           <nav>
-            <NavLink to="../suffering/suffering.jsx" className="button">
+            <NavLink to="/suffering" className="button">
               Why would a loving God allow so much suffering?
             </NavLink>
           </nav>

@@ -1,11 +1,10 @@
 import React from 'react';
 import './suffering.css'
-
-
+import { NavLink } from 'react-router-dom';
 
 export function Suffering() {
   return (
-    <main>
+    <main className='suffering-main'>
       <p className="intro">
         You are a child of a loving Heavenly Father,
         but the suffering you see and experience in life <br />
@@ -23,9 +22,9 @@ export function Suffering() {
       <br />
       <br />
       <nav>
-        <a href="../level3_pages/mymistakes.html" className="button">
+        <NavLink to="/mymistakes" className="button">
           Module 1: Suffering caused by my mistakes
-        </a>
+        </NavLink>
         <br />
         <br />
       </nav>
