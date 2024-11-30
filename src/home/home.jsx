@@ -3,8 +3,8 @@ import './home.css';
 import { NavLink } from 'react-router-dom';
 // import { Alma_Continued } from './alma_continued/suffering_alma_continued';
 // import { Suffering_Almas_Story } from './almas_story/suffering_almas_story';
-// import { My_Mistakes } from './my_mistakes/mymistakes';
-import { Suffering } from '../suffering/suffering';
+// 
+
 
 export function Home() {
   return (
