@@ -1,68 +1,27 @@
-*{
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-/* body {
+.login-page{
+    min-height: 100vh;
+    width: 100vw;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
+    justify-content: center;
     background-color: #1b7ea2;
-    margin: 0;
-} */
-
-
-
+    flex-direction: column;
+}
 
 div{
     display: flex;
     flex-direction: column;
     padding-top: 15px;
+    align-items: center;
+    gap: 10px;
 }
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  header {
-    background-color: hsl(196, 71%, 37%);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 15px 0;
-    display: flex;
-    flex-direction: row;
-    z-index: 1000;
-    justify-content: center; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-}
-
-
-header a {
-    text-decoration: none;
-    color: white;
-    display: inline-block;
-    margin-right: 80px;
-    font-family: 'Times New Roman';
-    font-size: 20px;
-}
-
-/* 
-body{
-    background-image: url('bom.webp');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-} */
 
 .title{
     color: white;
     align-items: center;
     font-size: 15px;
     padding-bottom: 5px;
+
 }
 
 form {
@@ -77,11 +36,6 @@ form {
     gap: 15px; 
 }
 
-div {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
 
 span {
     font-size: 1.2rem;

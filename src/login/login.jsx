@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './create_account.css';
+import './login.css';
 
 export function Login() {
   const [email, setEmail] = useState('');
@@ -12,7 +12,7 @@ export function Login() {
   };
 
   return (
-    <main>
+    <main className='login-page'>
       <div className="title">
         <h1>Sign In or Create an Account :)</h1>
       </div>

@@ -3,7 +3,7 @@ import './meeting_request.css'
 
 export function Meeting_Request() {
   return (
-    <main>
+    <main className='meeting-main'>
       <h1>Meet with the Missionaries</h1>
       <h3>Fill out this form and someone will be in touch with you soon!</h3>
 

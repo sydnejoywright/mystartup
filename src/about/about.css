@@ -1,18 +1,13 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 .about-page {
-  /* background-image: url('https://scripturecentral.org/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fscripturecentral-prod-strapi-uploads%2FKW_743_6f0e85b658%2FKW_743_6f0e85b658.jpg&w=3840&q=75');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
-  min-height: 100vh; /* Full viewport height */
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url('/about_pic.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .content-wrapper {
