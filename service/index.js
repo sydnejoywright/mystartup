@@ -13,18 +13,20 @@ app.listen(port, () => {
 
 app.use(express.json());
 
-
+const book_requests = []
+const meeting_requests = []
 
 app.post('/api/book_request', (req, res) => {
     const { name, address, email } = req.body;
-    // You can add logic to save this data to a database or process it
+    book_requests.push((name, address, email))
+    console.log(book_requests)
     res.status(201).json({ message: 'Book request received' });
   });
   
-  // Endpoint to handle feedback
   app.post('/api/meeting_request', (req, res) => {
-    const { userName, comments } = req.body;
-    // Add logic to store feedback in your database
+    const { name, phone, email, country } = req.body;
+    meeting_requests.push({ name, phone, email, country, message });
+    console.log(meeting_requests);
     res.status(201).json({ message: 'Meeting request received' });
   });
   
