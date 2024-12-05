@@ -21,7 +21,7 @@ function App() {
             <NavLink className='nav-link' to='book_request'>Free Book!</NavLink>
             <NavLink className='nav-link' to='meeting_request'>Meet a Missionary</NavLink>
             <NavLink className='nav-link' to='about'>About</NavLink>
-            <NavLink className='nav-link' to='create_account'>Create Profile</NavLink>
+            <NavLink className='nav-link' to='create_account'>Profile</NavLink>
             </nav>
         </header>
 
