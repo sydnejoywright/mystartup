@@ -19,4 +19,13 @@
   margin: 60px auto; /* Centers the wrapper horizontally with margin-top of 60px */
   text-align: center;
   border-radius: 8px;
+
 }
+
+.text-primary {
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2rem; /* Adjust size as needed */
+  text-align: center;
+}
+

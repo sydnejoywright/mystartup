@@ -8,7 +8,7 @@
     flex-direction: column;
 }
 
-div{
+.spandiv{
     display: flex;
     flex-direction: column;
     padding-top: 15px;
