@@ -29,3 +29,8 @@
   text-align: center;
 }
 
+.btn-primary {
+  font-size: 1.5rem; /* Adjust for larger text */
+  padding: 15px 25px; /* Adjust for larger button */
+  border-radius: 5px; /* Optional: rounded edges */
+}
