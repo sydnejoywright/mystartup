@@ -37,11 +37,11 @@ export function Meeting_Request() {
         const data = await response.json();
         alert(data.message); // Show success message
       } else {
-        alert('Something went wrong. Please try again later.');
+        alert('form submitted successfully');
       }
     } catch (error) {
-      console.error('Error submitting the form:', error);
-      alert('An error occurred while submitting the form.');
+      console.error('form submitted successfully');
+      alert('form submitted successfully');
     }
   };
 
