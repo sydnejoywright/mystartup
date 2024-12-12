@@ -10,9 +10,25 @@ import { Meeting_Request} from './meeting_request/meeting_request'
 import { Login } from './login/login';
 import { Suffering } from './suffering/suffering';
 import { My_Mistakes } from './my_mistakes/mymistakes';
+import { AuthState } from './login/authState';
 
 
 function App() {
+  // the website is broken because userName and authState are not being properly set. they 
+  // can be manually set at a few different locations:
+  // in path routing, by replacing {userName} and {authState} with strings of some sort
+  // ex. authState='unauthenticated'
+  // p.s. the only problem is authState getting set. if userName never gets set the website actually
+  // doesn't break because it's never even accessed
+
+  // there also seem to be issues in comparing authState with AuthState.Authenticated
+  // and AuthState.Unauthenticated because even when they are set manually,
+  // e.g. authState='unauthenticated' the correct input field boxes will not be displayed unless
+  // line 61 is changed to read {authState === 'unauthenticated' && .....
+  const [userName, setUserName] = React.useState(localStorage.getItem('userName') || '');
+  const currentAuthState = userName ? AuthState.Authenticated : AuthState.Unauthenticated;
+  const [authState, setAuthState] = React.useState(currentAuthState);
+
   return (
     <BrowserRouter>
         <header>
@@ -29,7 +45,15 @@ function App() {
         <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
-            <Route path='/create_account' element={<Login />} />
+            {/* <Route path='/create_account' element={<Login />} /> */}
+            <Route path='/create_account' element={<Login
+                userName={userName}
+                authState={authState}
+                onAuthChange={(userName, authState) => {
+                  setAuthState(authState);
+                  setUserName(userName);
+                }}
+              />}/>
             <Route path='/book_request' element={<Book_Request />} />
             <Route path='/meeting_request' element={<Meeting_Request />} />
             <Route path='/suffering' element={<Suffering />} />

@@ -51,11 +51,15 @@ import { Authenticated } from './authenticated';
 import { AuthState } from './authState';
 
 export function Login({ userName, authState, onAuthChange }) {
+  console.log(authState)
+
   return (
     <main className='login-page'>
+
       <div>
-        {authState !== AuthState.Unknown && <h1>Sign In or Create an Account</h1>}
-        {authState === AuthState.Authenticated && (
+
+        {authState  !== AuthState.Unknown && (<h1>Sign In or Create an Account</h1>)}
+        {authState  === AuthState.Authenticated && (
           <Authenticated userName={userName} onLogout={() => onAuthChange(userName, AuthState.Unauthenticated)} />
         )}
         {authState === AuthState.Unauthenticated && (
