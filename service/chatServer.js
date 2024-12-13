@@ -2,6 +2,7 @@
 const { Server } = require('socket.io');
 
 function setupChatServer(server) {
+    console.log(`Server is being set up` );
   const io = new Server(server, {
     // If needed, configure CORS or other options here
     cors: {
@@ -15,6 +16,7 @@ function setupChatServer(server) {
 
     // Listen for new messages
     socket.on('new-message', (message) => {
+        console.log(`Server received: ${message}` );
       // Broadcast the message to all connected clients
       io.emit('new-message', message);
     });

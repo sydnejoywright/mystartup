@@ -3,6 +3,15 @@ import { io } from 'socket.io-client';
 
 // Adjust the URL if needed to match your backend server address
 const socket = io('http://localhost:4001');
+socket.on('connect', () => {
+    console.log('connected to server');
+    });
+
+    socket.on('connect_error', (error) => {
+        console.log('failed to server', error);
+        });
+
+
 
 function Chat() {
   const [messages, setMessages] = useState([]);
@@ -41,7 +50,9 @@ function Chat() {
           onKeyDown={(e) => { if (e.key === 'Enter') handleSendMessage(); }}
           placeholder="Type your message..."
         />
-        <button className="chat-send-button" onClick={handleSendMessage}>Send</button>
+            <button className="chat-send-button" onClick={handleSendMessage}>Send
+            </button>
+
       </div>
     </>
   );
