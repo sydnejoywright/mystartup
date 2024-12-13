@@ -18,10 +18,10 @@ export function Home() {
           </nav>
         </div>
       
-        <p className="create_account">
+        {/* <p className="create_account">
             If you want to pick up where you left off, or save your progress for next time, please * 
                     <NavLink className = 'create' to="/create_account">Create an Account</NavLink>
-        </p>
+        </p> */}
     </main>
   );
 }
