@@ -1,9 +1,9 @@
 {
-  "name": "service",
+  "name": "startup",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
@@ -11,7 +11,10 @@
   "description": "",
   "dependencies": {
     "bcrypt": "^5.1.1",
-    "cookie-parser": "^1.4.7",
-    "express": "^4.21.1"
+    "cookie-parser": "^1.4.6",
+    "express": "^4.21.2",
+    "mongodb": "^4.17.2",
+    "openai": "^4.76.1",
+    "uuid": "^11.0.3"
   }
 }

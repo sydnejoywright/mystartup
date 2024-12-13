@@ -3,15 +3,16 @@ const bcrypt = require('bcrypt');
 const express = require('express');
 const app = express();
 const DB = require('./database.js');
+const { setupChatServer } = require('./chatServer.js'); // Import the chat server setup function
 
 const authCookieName = 'token';
 
 const book_requests = [];
 const meeting_requests = [];
 
-const port = process.argv.length > 2 ? process.argv[2] : 8082;
+const port = process.argv.length > 2 ? process.argv[2] : 4001;
 
-app.use(express.json()); // Move this line here
+app.use(express.json());
 app.use(cookieParser());
 app.use(express.static('public'));
 app.set('trust proxy', true);
@@ -19,16 +20,9 @@ app.set('trust proxy', true);
 const apiRouter = express.Router();
 app.use('/api', apiRouter);
 
-// app.listen(port, () => {
-//   console.log(`Listening on port ${port}`);
-// });
-
-
-
-
 app.post('/book_request', (req, res) => {
   const { name, address, email } = req.body;
-  book_requests.push({ name, address, email }); // Fix incorrect object structure
+  book_requests.push({ name, address, email });
   console.log(book_requests);
   res.status(201).json({ message: 'Book request received' });
 });
@@ -40,33 +34,26 @@ app.post('/meeting_request', (req, res) => {
   res.status(201).json({ message: 'Meeting request received' });
 });
 
-
 // CreateAuth token for a new user
 apiRouter.post('/auth/create', async (req, res) => {
   if (await DB.getUser(req.body.email)) {
     res.status(409).send({ msg: 'Existing user' });
   } else {
     const user = await DB.createUser(req.body.email, req.body.password);
-
-    // Set the cookie
     setAuthCookie(res, user.token);
-
     res.send({
       id: user._id,
     });
   }
 });
 
-
 // GetAuth token for the provided credentials
 apiRouter.post('/auth/login', async (req, res) => {
   const user = await DB.getUser(req.body.email);
-  if (user) {
-    if (await bcrypt.compare(req.body.password, user.password)) {
-      setAuthCookie(res, user.token);
-      res.send({ id: user._id });
-      return;
-    }
+  if (user && await bcrypt.compare(req.body.password, user.password)) {
+    setAuthCookie(res, user.token);
+    res.send({ id: user._id });
+    return;
   }
   res.status(401).send({ msg: 'Unauthorized' });
 });
@@ -91,22 +78,15 @@ secureApiRouter.use(async (req, res, next) => {
   }
 });
 
-
-
-
-
-
-
 // Default error handler
 app.use(function (err, req, res, next) {
+  console.error(err);
   res.status(500).send({ type: err.name, message: err.message });
 });
 
 app.use((_req, res) => {
   res.sendFile('index.html', { root: 'public' });
 });
-
-
 
 // setAuthCookie in the HTTP response
 function setAuthCookie(res, authToken) {
@@ -120,3 +100,6 @@ function setAuthCookie(res, authToken) {
 const httpService = app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
+
+// Set up the chat server using Socket.io
+setupChatServer(httpService);

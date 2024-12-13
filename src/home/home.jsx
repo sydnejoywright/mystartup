@@ -9,6 +9,7 @@ import { NavLink } from 'react-router-dom';
 export function Home() {
   return (
     <main>
+      <div className='all'>
       <div className="text-container">
           <h1>Welcome to a short lesson in The Book of Mormon</h1>
           <nav>
@@ -22,6 +23,7 @@ export function Home() {
             If you want to pick up where you left off, or save your progress for next time, please * 
                     <NavLink className = 'create' to="/create_account">Create an Account</NavLink>
         </p> */}
+        </div>
     </main>
   );
 }

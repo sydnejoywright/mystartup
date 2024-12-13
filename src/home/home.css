@@ -1,6 +1,7 @@
 
 
-body {
+.all {
+  padding-top: 1050px;
   background-image: url('https://scripturecentral.org/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fscripturecentral-prod-strapi-uploads%2FKW_743_6f0e85b658%2FKW_743_6f0e85b658.jpg&w=3840&q=75');
   background-size: cover;
   background-repeat: no-repeat;
