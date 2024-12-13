@@ -1,3 +1,5 @@
+
+
 .all {
   padding-top: 1050px;
   background-image: url('https://scripturecentral.org/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fscripturecentral-prod-strapi-uploads%2FKW_743_6f0e85b658%2FKW_743_6f0e85b658.jpg&w=3840&q=75');
@@ -9,15 +11,16 @@
   color: #fff; /* Set a text color to contrast with the background */
 }
 
-main h1 {
+
+main h1{
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 30px;
 }
 
-main nav-link {
-  text-decoration: none;
-  font-size: 20px;
+main nav-link{
+    text-decoration: none;
+    font-size: 20px;
 }
 
 .text-container {
@@ -32,38 +35,43 @@ main nav-link {
   background-color: #5c6264b4; /* Offsets the container so it is exactly centered */
 }
 
-.create_account {
+
+.create_account{
   margin-top: 900px;
   bottom: 10%;
   font-size: 30px;
+
 }
 
-.create {
-  text-decoration: none;
-  font-size: 25px;
-  color: gold;
+.create{
+    text-decoration: none;
+    font-size: 25px;
+    color: gold;
 }
 
-main nav p {
-  padding-top: 20px;
-  font-size: 25px;
-}
+
+ main nav p{
+    padding-top: 20px;
+    font-size: 25px;
+ }
 
 .button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #1b7ea2;
-  color: white;
+  background-color: #1b7ea2; /* Green background */
+  color: white; /* White text */
   text-align: center;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 30px;
-  transition: background-color 0.3s ease;
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 30px; /* Font size */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+  
 }
 
 .button:hover {
-  background-color: rgb(221, 189, 5);
+  background-color: rgb(221, 189, 5); /* Darker green on hover */
 }
+
 
 .websocket-stuff {
   position: fixed;
@@ -76,7 +84,7 @@ main nav p {
   box-sizing: border-box;
 }
 
-/* Chat Specific Styles */
+/* Styles for the chat interface */
 .chat-container {
   display: inline-block;
   background-color: rgba(0,0,0,0.6);
@@ -130,6 +138,7 @@ main nav p {
   cursor: pointer;
   font-size: 16px;
 }
+
 .chat-send-button:hover {
   background-color: rgb(221, 189, 5);
 }
