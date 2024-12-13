@@ -1,35 +1,45 @@
 import React, { useEffect, useState } from 'react';
-import { io } from 'socket.io-client';
-
-// Adjust the URL if needed to match your backend server address
-const socket = io('http://localhost:4001');
-socket.on('connect', () => {
-    console.log('connected to server');
-    });
-
-    socket.on('connect_error', (error) => {
-        console.log('failed to server', error);
-        });
-
-
 
 function Chat() {
   const [messages, setMessages] = useState([]);
   const [inputMsg, setInputMsg] = useState('');
+  const [ws, setWs] = useState(null);
 
   useEffect(() => {
-    socket.on('new-message', (message) => {
+    let port = window.location.port;
+    const protocol = window.location.protocol === 'http:' ? 'ws' : 'wss';
+    this.socket = new WebSocket(`${protocol}://${window.location.hostname}:${port}/ws`);
+
+    setWs(socket);
+
+    socket.onopen = () => {
+      console.log('connected to server');
+    };
+
+    socket.onclose = () => {
+      console.log('disconnected from server');
+    };
+
+    socket.onerror = (error) => {
+      console.log('failed to connect to server', error);
+    };
+
+    socket.onmessage = (event) => {
+      // Parse the incoming message as JSON
+      const message = JSON.parse(event.data);
       setMessages((prev) => [...prev, message]);
-    });
+    };
 
     return () => {
-      socket.off('new-message');
+      socket.close();
     };
   }, []);
 
   const handleSendMessage = () => {
-    if (inputMsg.trim() !== '') {
-      socket.emit('new-message', { text: inputMsg });
+    if (inputMsg.trim() !== '' && ws) {
+      // Send the message as JSON
+      const messageObj = { text: inputMsg };
+      ws.send(JSON.stringify(messageObj));
       setInputMsg('');
     }
   };
@@ -50,9 +60,9 @@ function Chat() {
           onKeyDown={(e) => { if (e.key === 'Enter') handleSendMessage(); }}
           placeholder="Type your message..."
         />
-            <button className="chat-send-button" onClick={handleSendMessage}>Send
-            </button>
-
+        <button className="chat-send-button" onClick={handleSendMessage}>
+          Send
+        </button>
       </div>
     </>
   );

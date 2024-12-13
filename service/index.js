@@ -3,7 +3,7 @@ const bcrypt = require('bcrypt');
 const express = require('express');
 const app = express();
 const DB = require('./database.js');
-const { setupChatServer } = require('./chatServer.js'); // Import the chat server setup function
+const { setupChatServer } = require('./chatServer.js'); // Using the new ws-based server
 
 const authCookieName = 'token';
 
@@ -99,8 +99,7 @@ function setAuthCookie(res, authToken) {
 
 const httpService = app.listen(port, () => {
   console.log(`Listening on port ${port}`);
-  console.log(`Attempting` );
 });
 
-// Set up the chat server using Socket.io
+// Set up the chat server using ws
 setupChatServer(httpService);
