@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { io } from 'socket.io-client';
 
-// Point this to wherever your Node/Express server is running
+// Adjust the URL if needed to match your backend server address
 const socket = io('http://localhost:4001');
 
 function Chat() {
@@ -26,21 +26,24 @@ function Chat() {
   };
 
   return (
-    <div style={{ border: '1px solid #000', padding: '10px', maxWidth: '400px', margin: 'auto' }}>
-      <h2>Live Chat</h2>
-      <div style={{ maxHeight: '200px', overflowY: 'auto', border: '1px solid #ccc', marginBottom: '10px' }}>
+    <>
+      <div className="chat-messages">
         {messages.map((m, i) => (
           <div key={i}>{m.text}</div>
         ))}
       </div>
-      <input
-        type="text"
-        value={inputMsg}
-        onChange={(e) => setInputMsg(e.target.value)}
-        onKeyDown={(e) => { if (e.key === 'Enter') handleSendMessage(); }}
-      />
-      <button onClick={handleSendMessage}>Send</button>
-    </div>
+      <div className="chat-input-container">
+        <input
+          className="chat-input"
+          type="text"
+          value={inputMsg}
+          onChange={(e) => setInputMsg(e.target.value)}
+          onKeyDown={(e) => { if (e.key === 'Enter') handleSendMessage(); }}
+          placeholder="Type your message..."
+        />
+        <button className="chat-send-button" onClick={handleSendMessage}>Send</button>
+      </div>
+    </>
   );
 }
 

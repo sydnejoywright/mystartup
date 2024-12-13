@@ -1,7 +1,7 @@
 import React from 'react';
 import './home.css';
 import { NavLink } from 'react-router-dom';
-import Chat from '../chat/Chat'; // Make sure this path matches your file structure
+import Chat from '../chat/Chat'; // Ensure this path matches where Chat.jsx is located
 
 export function Home() {
   return (
@@ -17,10 +17,12 @@ export function Home() {
         </div>
       </div>
       
-      {/* Integrate the Chat component below */}
-      <div style={{ marginTop: '20px', textAlign: 'center' }}>
-        <h2>Live Chat</h2>
-        <Chat />
+      {/* Place the chat at the bottom of the screen */}
+      <div className="websocket-stuff">
+        <div className="chat-container">
+          <h2>Live Chat</h2>
+          <Chat />
+        </div>
       </div>
     </main>
   );
