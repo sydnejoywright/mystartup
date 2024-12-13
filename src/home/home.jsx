@@ -1,16 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './home.css';
 import { NavLink } from 'react-router-dom';
-// import { Alma_Continued } from './alma_continued/suffering_alma_continued';
-// import { Suffering_Almas_Story } from './almas_story/suffering_almas_story';
-// 
-
+import Chat from '../chat/Chat'; // Make sure this path matches your file structure
 
 export function Home() {
   return (
     <main>
       <div className='all'>
-      <div className="text-container">
+        <div className="text-container">
           <h1>Welcome to a short lesson in The Book of Mormon</h1>
           <nav>
             <NavLink to="/suffering" className="button">
@@ -18,12 +15,13 @@ export function Home() {
             </NavLink>
           </nav>
         </div>
+      </div>
       
-        {/* <p className="create_account">
-            If you want to pick up where you left off, or save your progress for next time, please * 
-                    <NavLink className = 'create' to="/create_account">Create an Account</NavLink>
-        </p> */}
-        </div>
+      {/* Integrate the Chat component below */}
+      <div style={{ marginTop: '20px', textAlign: 'center' }}>
+        <h2>Live Chat</h2>
+        <Chat />
+      </div>
     </main>
   );
 }

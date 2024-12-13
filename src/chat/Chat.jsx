@@ -1,22 +1,18 @@
-// src/chat/Chat.jsx
 import React, { useEffect, useState } from 'react';
 import { io } from 'socket.io-client';
 
-// If your frontend is served by the same server and port, just call io() without arguments.
-// If you have a different port or domain, specify it like: io('http://localhost:4001')
-const socket = io();
+// Point this to wherever your Node/Express server is running
+const socket = io('http://localhost:4001');
 
 function Chat() {
   const [messages, setMessages] = useState([]);
   const [inputMsg, setInputMsg] = useState('');
 
   useEffect(() => {
-    // Listen for incoming messages
     socket.on('new-message', (message) => {
       setMessages((prev) => [...prev, message]);
     });
 
-    // Cleanup the listener on unmount
     return () => {
       socket.off('new-message');
     };
@@ -24,11 +20,7 @@ function Chat() {
 
   const handleSendMessage = () => {
     if (inputMsg.trim() !== '') {
-      const msgObj = {
-        text: inputMsg,
-        timestamp: Date.now()
-      };
-      socket.emit('new-message', msgObj);
+      socket.emit('new-message', { text: inputMsg });
       setInputMsg('');
     }
   };
@@ -41,11 +33,11 @@ function Chat() {
           <div key={i}>{m.text}</div>
         ))}
       </div>
-      <input 
-        type="text" 
-        value={inputMsg} 
-        onChange={(e) => setInputMsg(e.target.value)} 
-        onKeyDown={(e) => { if (e.key === 'Enter') handleSendMessage(); }} 
+      <input
+        type="text"
+        value={inputMsg}
+        onChange={(e) => setInputMsg(e.target.value)}
+        onKeyDown={(e) => { if (e.key === 'Enter') handleSendMessage(); }}
       />
       <button onClick={handleSendMessage}>Send</button>
     </div>
